@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(n){
+            var total = 1;
+            for(var i = 0; i < n; i++){
+                total = total * (n - i)
+                console.log("Current i is: " + i);
+                // First time total = 1
+                // increment each time up to n
+            }
+
+            return total;
+            // return the final total at the end of everything
+        }
+
+        var factorialNum = prompt("Please enter a number to factorialize: ");
+        var userNum = parseInt(factorialNum,10);
+        
+        console.log(userNum + "! is " + factorial(userNum));
+
+    </script>
+</body>
+</html>
